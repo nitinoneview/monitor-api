@@ -24,6 +24,12 @@ try {
 
 $method = $_SERVER['REQUEST_METHOD'];
 
+// UptimeRobot ping ke liye
+if ($method === 'GET' && isset($_GET['ping'])) {
+    echo json_encode(['status' => 'ok', 'message' => 'pong']);
+    exit;
+}
+
 // ================
 // GET - Dashboard ke liye latest metrics
 // ================
