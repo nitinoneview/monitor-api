@@ -23,6 +23,11 @@ try {
 }
 
 $method = $_SERVER['REQUEST_METHOD'];
+// UptimeRobot HEAD request handle karo
+if ($method === 'HEAD') {
+    http_response_code(200);
+    exit;
+}
 
 // UptimeRobot ping ke liye
 if ($method === 'GET' && isset($_GET['ping'])) {
