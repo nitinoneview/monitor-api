@@ -3,7 +3,7 @@
 A full-stack server monitoring system built from scratch by a Production Support Engineer.  
 Monitors Linux server health in real-time and displays metrics on a live web dashboard.
 
-![Dashboard](https://monitor-frontend-flame.vercel.app)
+> 🔗 Live at: [monitor-frontend-flame.vercel.app](https://monitor-frontend-flame.vercel.app)
 
 ---
 
@@ -46,7 +46,8 @@ NeonDB (PostgreSQL)
       │  GET /api.php
       ▼
 Frontend Dashboard (Vercel)
-      HTML + CSS + JavaScript
+
+ HTML + CSS + JavaScript
 ```
 
 -----------------------------------------------------
@@ -63,10 +64,10 @@ Frontend Dashboard (Vercel)
 | Uptime      | UptimeRobot (24/7 monitoring)
 | OS          | Red Hat Enterprise Linux 8 
 
------------------------------------------------------
+-------------------------------------------------------------
+## 📁 Project Structure
 
-## 📁 Project Structure ############
-
+```
 server-monitor/
 ├── monitor-agent/
 │   ├── monitor.sh        # Bash agent — collects metrics
@@ -78,7 +79,8 @@ server-monitor/
 │   └── .env.example      # Environment variable template
 │
 └── monitor-frontend/
-└── index.html            # Dashboard — HTML/CSS/JS
+    └── index.html        # Dashboard — HTML/CSS/JS
+```
 
 --------------------------------------------------------------
 
