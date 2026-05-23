@@ -30,23 +30,24 @@ Monitors Linux server health in real-time and displays metrics on a live web das
 | Uptime      | System uptime 			|
 
 ------------------------------------------------------
+## 🏗️ Architecture
 
-## 🏗️ Architecture ################
-
+```
 RHEL 8 Server (Agent)
-│
-│  curl POST (JSON) — every 1 min via cron
-▼
+      │
+      │  curl POST (JSON) — every 1 min via cron
+      ▼
 PHP REST API (Render.com)
-│
-│  SQL INSERT
-▼
+      │
+      │  SQL INSERT
+      ▼
 NeonDB (PostgreSQL)
-│
-│  GET /api.php
-▼
+      │
+      │  GET /api.php
+      ▼
 Frontend Dashboard (Vercel)
-HTML + CSS + JavaScript
+      HTML + CSS + JavaScript
+```
 
 -----------------------------------------------------
 
